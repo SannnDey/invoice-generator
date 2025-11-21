@@ -1,5 +1,5 @@
 import { InvoiceData } from "@/app/model/invoice";
-import { formatRupiah } from "@/app/utils/currency";
+import { formatRupiah } from "@/app/core/currency";
 
 export default function InvoicePreview({ data }: { data: InvoiceData }) {
   const total = data.items.reduce((s, i) => s + i.qty * i.price, 0);

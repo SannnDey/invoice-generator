@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { InvoiceData, InvoiceItem } from "@/app/model/invoice";
-import { formatRupiah, parseNumber } from "@/app/utils/currency";
+import { formatRupiah, parseNumber } from "@/app/core/currency";
 
 interface InvoiceFormProps {
   onGenerate: (data: Omit<InvoiceData, "invoiceNumber" | "invoiceDate">) => void;
