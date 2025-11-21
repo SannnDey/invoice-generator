@@ -1,4 +1,3 @@
-// utils/currency.ts
 export const formatRupiah = (n: number) =>
   n ? "Rp " + n.toLocaleString("id-ID") : "Rp 0";
 
